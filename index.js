@@ -10,7 +10,7 @@ const server = http.createServer(function (req, res) {
     res.setHeader('Content-Type', 'application/pdf')
     res.setHeader('Content-Disposition', 'attachment; filename=jsct_arrays.pdf')
     file.pipe(res)
-  } else {
+  } else if (req.url === '/survey'){
     res.write('hi')
     res.end()
   }
