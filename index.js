@@ -8,7 +8,7 @@ const server = http.createServer(function (req, res) {
     const stat = fs.statSync(pdfPath)
     res.setHeader('Content-Length', stat.size)
     res.setHeader('Content-Type', 'application/pdf')
-    res.setHeader('Content-Disposition', 'attachment; filename=jsct_arrays.pdf')
+    res.setHeader('Content-Disposition', 'inline; filename=jsct_arrays.pdf')
     file.pipe(res)
   } else if (req.url === '/survey') {
     res.writeHead(302, { Location: 'https://github.com/' })

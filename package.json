@@ -18,6 +18,5 @@
   },
   "homepage": "https://github.com/MarkGeeRomano/jsct-arrays#readme",
   "dependencies": {
-    "express": "^4.16.4"
   }
 }
