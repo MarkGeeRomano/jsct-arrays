@@ -11,7 +11,7 @@ const server = http.createServer(function (req, res) {
     res.setHeader('Content-Disposition', 'inline; filename=jsct_arrays.pdf')
     file.pipe(res)
   } else if (req.url === '/survey') {
-    res.writeHead(302, { Location: 'https://github.com/' })
+    res.writeHead(302, { Location: 'https://docs.google.com/forms/d/1npzQcOxSoKjmWUkmGr9g_J1ZovVcOq6dduoEvIOERnE' })
     res.end()
   }
 })
